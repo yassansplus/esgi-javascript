@@ -4,8 +4,6 @@ function ucfirst(string){
 
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
-console.log(ucfirst("BonNjouer"))
-
 function capitalize(string){
     if(typeof(string) !== 'string' || string.trim().length ==0)
     return "";
@@ -26,3 +24,16 @@ function leet(string) {
     var monCryptage = { "A": 4, "E": 3, "I": 1, "O": "0", "U": "(_)", "Y": 7 };
     return string.split('').map(s => monCryptage[s.toUpperCase()] || s).join('')
 }
+function verlan(){
+    if (typeof string !== "string" || string === "") return "";
+
+    return string.split('').reverse().join('');
+}
+
+
+function yoda(string){
+    if (typeof string !== "string" || string === "") return "";
+
+    return string.split(' ').reverse().join(' ')
+}
+
