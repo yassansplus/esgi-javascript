@@ -7,7 +7,7 @@ function ucfirst(string){
 function capitalize(string){
     if(typeof(string) !== 'string' || string.trim().length ==0)
     return "";
-    return string.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+    return string.toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
 }
 
 function camelCase(string) {
