@@ -12,8 +12,7 @@ function capitalize(string){
 
 function camelCase(string) {
     if (typeof string !== "string" || string === "") return "";
-    string = string.toLocaleLowerCase();
-    return string.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('');
+    return string.toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('');
 }
 
 function snake_case(string) {
