@@ -10,9 +10,10 @@ function capitalize(string){
     return string.toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
 }
 
-function camelCase(string) {
-    if (typeof string !== "string" || string === "") return "";
-    return string.toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('');
+function camelCase(string){
+    if(isNotString(string)) return ""
+
+    return str.replace('_', ' ').split(' ').map(w => ucfirst(w.toLowerCase())).join('')
 }
 
 function snake_case(string) {
@@ -36,4 +37,4 @@ function yoda(string){
 
     return string.split(' ').reverse().join(' ')
 }
-
+console.log(camelCase("toggleCase is the coolest"))
