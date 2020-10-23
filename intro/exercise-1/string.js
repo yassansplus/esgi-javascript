@@ -37,4 +37,3 @@ function yoda(string){
 
     return string.split(' ').reverse().join(' ')
 }
-console.log(camelCase("toggleCase is the coolest"))
